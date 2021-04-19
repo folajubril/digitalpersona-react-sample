@@ -39,7 +39,7 @@ reader.onDeviceConnected = async (device) => {
   console.log('Device is connected')
 }
 reader.onDeviceDisconnected = async (device) => {
-              await this.updateReaderStatus();
+              await updateReaderStatus();
               console.log('device is diconnected')
 }
 reader.onSamplesAcquired = async (data) => {
